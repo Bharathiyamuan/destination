@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    padding: 10px;
+    
+}
+.front{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.line{
+    width:100px;
+    height:3px;
+    background-color: blue;
+}
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+ul li{
+    list-style: none;
+    border: 1px solid blue;
+    width: 120px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #F1F1F1;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    
+}
+ul li a:hover{
+    color: white;
+    background-color:#1B1A55;
+}
+.box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10px;
+    gap: 10px;
+    grid-template-rows:repeat(9,300px); 
+}
+.box1{
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.box1.b1{
+    background: url(https://themewagon.github.io/travela/img/destination-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box1.b2{
+    background: url(https://themewagon.github.io/travela/img/destination-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box1.b3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background: url(https://themewagon.github.io/travela/img/destination-9.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box1.b4{
+    background: url(https://themewagon.github.io/travela/img/destination-7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box1.b5{
+    background: url(https://themewagon.github.io/travela/img/destination-8.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box1.b6{
+    background: url(https://themewagon.github.io/travela/img/destination-4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box1.b7{
+    background: url(https://themewagon.github.io/travela/img/destination-5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box1.b8{
+    background: url(https://themewagon.github.io/travela/img/destination-6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width:900px){
+    ul {
+        width:100%;
+        flex-direction: column;
+    }
+    .line{
+        width:75px;
+        height:3px;
+    }
+    .box{
+        display: grid;
+    }
+    .box1.b1{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .box1.b2{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end:3;
+
+    }
+    .box1.b3{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 5;
+
+    }
+    .box1.b4{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end:6;
+
+    }
+    .box1.b5{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 6;
+        grid-row-end:7;
+
+    }
+    .box1.b6{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 7;
+        grid-row-end:8;
+
+    }
+    .box1.b7{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 8;
+        grid-row-end:9;
+
+    }
+    .box1.b8{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 9;
+        grid-row-end:10;
+    }
+}
+@media(max-width:580px){
+    ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    ul li{
+        width:200px;
+        margin:10px;
+    }
+    .line{
+        width:75px;
+        height:3px;
+    }
+    .box{
+        display: grid;
+    }
+    
+    .box1.b1{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .box1.b2{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end:3;
+    }
+    .box1.b3{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end:5;
+    }
+    .box1.b4{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end:6;
+    }
+    .box1.b5{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 6;
+        grid-row-end:7;
+    }
+    .box1.b6{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 7;
+        grid-row-end:8;
+    }
+    .box1.b7{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 8;
+        grid-row-end:9;
+    }
+    .box1.b8{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 9;
+        grid-row-end:10;
+    }
+}
